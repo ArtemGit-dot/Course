@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".presentation.mainmenu.HomeMenuFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCourse"
+        android:layout_width="328dp"
+        android:layout_height="740dp"
+        android:layout_marginTop="164dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/cours_item"/>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="56dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="264dp"
+            android:layout_height="56dp"
+            android:background="@drawable/shape_search"
+            android:drawableLeft="@drawable/ic_search"
+            android:ems="10"
+            android:hint="@string/Search_courses"
+            android:paddingLeft="12dp"
+            android:textColorHint="@color/whitegray" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/shape_btn_filter"
+            app:srcCompat="@drawable/ic_filter_btn" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewDateAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="128dp"
+        android:textSize="16sp"
+        android:text="@string/by_date_added"
+        android:textColor="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="365dp"
+        android:layout_marginTop="133dp"
+        android:src="@drawable/ic_arrow_down_up"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

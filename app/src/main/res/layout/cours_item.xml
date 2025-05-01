@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="245dp" >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="328dp"
+        android:layout_height="236dp"
+        app:cardBackgroundColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_item_course">
+
+            <LinearLayout
+                android:layout_width="296dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="130dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/java_developer"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tvInfo"
+                    android:layout_width="296dp"
+                    android:layout_height="32dp"
+                    android:text="@string/java_developer"
+                    android:textColor="@color/whitegray"
+                    android:textSize="12sp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="TextView"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvMoreDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="205dp"
+                        android:layout_marginTop="14dp"
+                        android:text="@string/more_detailed"
+                        android:textColor="@color/green"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/course1" />
+
+            <ImageButton
+                android:id="@+id/btnAddFavorite"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/shape_btn_add_favorites"
+                android:src="@drawable/ic_add_favorites"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
